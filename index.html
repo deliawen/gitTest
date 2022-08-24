@@ -26,5 +26,24 @@
             <i class="icon-layer-locking" @click="lockNode(null, selectList)"></i>
         </div>
         </div>
+        <!-- 操作栏 -->
+        <div class="settings-bar" :class="{ lock: selectList.length === 0 }">
+            <!-- 置顶 -->
+            <div>
+                <i class="icon-layer-topping" @click="onClickMoveToTop"></i>
+            </div>
+            <!-- 置底 -->
+            <div>
+                <i class="icon-layer-bottom" @click="onClickMoveToBottom"></i>
+            </div>
+            <!-- 删除 -->
+            <div>
+                <i class="icon-layer-delete" @click="deleteComponent"></i>
+            </div>
+            <!-- 锁定 -->
+            <div>
+                <i class="icon-layer-locking" @click="lockNode(null, selectList)"></i>
+            </div>
+        </div>
 </body>
 </html>
