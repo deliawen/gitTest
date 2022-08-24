@@ -10,28 +10,12 @@
     <!-- 操作栏 -->
     <div class="settings-bar" :class="{ lock: selectList.length === 0 }">
         <!-- 置顶 -->
-        <div>
+        <div >
             <i class="icon-layer-topping" @click="onClickMoveToTop"></i>
         </div>
         <!-- 置底 -->
-        <div @click="onClickMoveToBottom">
-            <i class="icon-layer-bottom"></i>
-        </div>
-        <!-- 删除 -->
-        <div @click="deleteComponent">
-            <i class="icon-layer-delete"></i>
-        </div>
-        <!-- 锁定 -->
-        <div @click="lockNode(null, selectList)">
-            <i class="icon-layer-locking"></i>
-        </div>
-        <!-- 删除 -->
-        <div @click="deleteComponent">
-            <i class="icon-layer-delete"></i>
-        </div>
-        <!-- 锁定 -->
-        <div @click="lockNode(null, selectList)">
-            <i class="icon-layer-locking"></i>
+        <div>
+            <i class="icon-layer-bottom" @click="onClickMoveToBottom"></i>
         </div>
         </div>
 </body>
